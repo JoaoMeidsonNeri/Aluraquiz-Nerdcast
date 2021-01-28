@@ -1,78 +1,50 @@
-# Example app with styled-components
+# Imersão React Alura - NEXT.Js
 
-This example features how you use a different styling solution than [styled-jsx](https://github.com/zeit/styled-jsx) that also supports universal styles. That means we can serve the required styles for the first render within the HTML and then load the rest in the client. In this case we are using [styled-components](https://github.com/styled-components/styled-components).
+## Aula 1 - Styled Components e NEXT.Js
 
-For this purpose we are extending the `<Document />` and injecting the server side rendered styles into the `<head>`, and also adding the `babel-plugin-styled-components` (which is required for server side rendering). Additionally we set up a global [theme](https://www.styled-components.com/docs/advanced#theming) for styled-components using NextJS custom [`<App>`](https://nextjs.org/docs/advanced-features/custom-app) component.
+-  Iniciar um projeto com o boilerplate do React com Next.js e styled-components;
+-  Criar componentes React usando styled-components;
+-  Implementar tema (theme) para a interface;
+-  Fornecer as informações de tema e dados do quiz através de uma base de dados "mockada";
+-  Usaremos o Next.js para criar a tag <b>head</b> e as meta-infos necessárias;
+-  Faremos a publicação (deploy) na Vercel.
 
-## Deploy your own
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example):
+## Aula 2 - Linter, Rotas e State
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-styled-components&project-name=with-styled-components&repository-name=with-styled-components)
+-  Instalar e rodar o Eslint, biblioteca de linting para JS;
+-  Entender o que é uma SPA;
+-  Criar componentes complexos com styled-components;
+-  Utilizar props com os componentes;
+-  Capturar de eventos em formulários (como clique);
+-  Gerenciar estado (state) de componentes com hooks;
+-  Passar dados em URLs através de query params;
+-  Utilizar next/router para implementação de rotas;
 
-## How to use
+## Aula 3 - Inputs e Página de Quiz
 
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init) or [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/) to bootstrap the example:
+-  Criar o componente <b>Input</b>;
+-  Trabalhar com as propriedades (props) dos componentes;
+-  Garantir a tipagem das propriedades com a biblioteca prop-types;
+-  Criar a página de quiz e seus componentes;
+-  Criar componente <b>LoadingWidget</b> a partir do <b>Widget</b>;
+-  Exibir as perguntas e alternativas na tela a partir do arquivo <b>db.json</b>;
+-  Criar formulários para gerenciar as alternativas;
+-  Trabalhar com os estados (states) da página de quiz para alternar carregamento, questões e resultado;
+-  Entender o ciclo de vida dos componentes do React;
+-  utilizar useEffects() para adicionar ações ao componente da tela de quiz;
 
-```bash
-npx create-next-app --example with-styled-components with-styled-components-app
-# or
-yarn create next-app --example with-styled-components with-styled-components-app
-```
+## Aula 4 - Quiz, Pontuação e APIs com NEXT.Js
 
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
-
-### Try it on CodeSandbox
-
-[Open this example on CodeSandbox](https://codesandbox.io/s/github/vercel/next.js/tree/canary/examples/with-styled-components)
-
-### Notes
-
-When wrapping a [Link](https://nextjs.org/docs/api-reference/next/link) from `next/link` within a styled-component, the [as](https://styled-components.com/docs/api#as-polymorphic-prop) prop provided by `styled` will collide with the Link's `as` prop and cause styled-components to throw an `Invalid tag` error. To avoid this, you can either use the recommended [forwardedAs](https://styled-components.com/docs/api#forwardedas-prop) prop from styled-components or use a different named prop to pass to a `styled` Link.
-
-<details>
-<summary>Click to expand workaround example</summary>
-<br />
-
-**components/StyledLink.js**
-
-```javascript
-import Link from 'next/link'
-import styled from 'styled-components'
-
-const StyledLink = ({ as, children, className, href }) => (
-  <Link href={href} as={as} passHref>
-    <a className={className}>{children}</a>
-  </Link>
-)
-
-export default styled(StyledLink)`
-  color: #0075e0;
-  text-decoration: none;
-  transition: all 0.2s ease-in-out;
-
-  &:hover {
-    color: #40a9ff;
-  }
-
-  &:focus {
-    color: #40a9ff;
-    outline: none;
-    border: 0;
-  }
-`
-```
-
-**pages/index.js**
-
-```javascript
-import StyledLink from '../components/StyledLink'
-
-export default () => (
-  <StyledLink href="/post/[pid]" forwardedAs="/post/abc">
-    First post
-  </StyledLink>
-)
-```
-
-</details>
+-  Criar o componente <b>Input</b>;
+-  Desenvolver o algoritmo de seleção de alternativa para cada pergunta;
+-  Statements x expressões no React;
+-  Ver mais sobre props do React e a prop key;
+-  Manejo de estados com a renderização de várias instâncias de um mesmo componente;
+-  Lógica da seleção de alternativas, habilitação do botão e troca de pergunta (utilizando estados, atributos do HTML e índices da array);
+-  Lógica da contagem de pontos com alteração de estado;
+-  Atualização dos pontos com o ciclo de atualização do React;
+-  Exibir a tela de resultados com a soma dos pontos e as alternativas escolhidas ao final das perguntas;
+-  Usar atributo data-[] para passar informações de estilo para o componente das alternativas;
+- Criar lambda servers com Next.js para retornar endpoints;
+- Passar configurações de CORS para poder acessar quizes externos;
