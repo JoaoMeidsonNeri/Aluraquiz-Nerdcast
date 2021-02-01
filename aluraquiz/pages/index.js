@@ -1,18 +1,18 @@
+import Head from 'next/head';
+import { motion } from 'framer-motion';
 import React from 'react';
 import styled from 'styled-components';
-import Head from 'next/head';
 import { useRouter } from 'next/router';
-import { motion } from 'framer-motion';
 
-import Link from '../src/components/Link';
+import Button from '../src/components/Button';
 import db from '../db.json';
-import Widget from '../src/components/Widget';
+import GitHubCorner from '../src/components/GitHubCorner';
+import Footer from '../src/components/Footer';
+import Link from '../src/components/Link';
 import QuizLogo from '../src/components/QuizLogo';
 import QuizBackground from '../src/components/QuizBackground';
-import Footer from '../src/components/Footer';
-import GitHubCorner from '../src/components/GitHubCorner';
 import Input from '../src/components/Input';
-import Button from '../src/components/Button';
+import Widget from '../src/components/Widget';
 
 
 const QuizContainer = styled.div`

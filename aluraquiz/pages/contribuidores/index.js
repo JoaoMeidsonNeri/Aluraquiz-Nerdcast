@@ -1,16 +1,16 @@
 /* eslint-disable jsx-a11y/alt-text */
 /* eslint-disable no-unused-vars */
 /* eslint-disable react/prop-types */
-import React from 'react';
-import fs from 'fs';
-import NextImage from 'next/image';
-import styled from 'styled-components';
 import db from '../../db.json';
-import Widget from '../../src/components/Widget';
-import QuizLogo from '../../src/components/QuizLogo';
-import QuizBackground from '../../src/components/QuizBackground';
+import fs from 'fs';
 import Footer from '../../src/components/Footer';
 import GitHubCorner from '../../src/components/GitHubCorner';
+import NextImage from 'next/image';
+import QuizLogo from '../../src/components/QuizLogo';
+import QuizBackground from '../../src/components/QuizBackground';
+import React from 'react';
+import styled from 'styled-components';
+import Widget from '../../src/components/Widget';
 
 export const QuizContainer = styled.div`
   width: 100%;

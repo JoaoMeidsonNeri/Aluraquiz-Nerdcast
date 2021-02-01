@@ -1,11 +1,11 @@
 /* eslint-disable react/prop-types */
+import AlternativesForm from '../../components/AlternativesForm';
 import React from 'react';
 import { Lottie } from '@crello/react-lottie'
 import Widget from '../../components/Widget';
 import QuizLogo from '../../components/QuizLogo';
 import QuizBackground from '../../components/QuizBackground';
 import QuizContainer from '../../components/QuizContainer';
-import AlternativesForm from '../../components/AlternativesForm';
 import Button from '../../components/Button';
 import BackLinkArrow from '../../components/BackLinkArrow';
 import loadingAnimation from './animations/loading.json';
