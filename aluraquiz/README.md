@@ -48,3 +48,16 @@
 -  Usar atributo data-[] para passar informações de estilo para o componente das alternativas;
 - Criar lambda servers com Next.js para retornar endpoints;
 - Passar configurações de CORS para poder acessar quizes externos;
+
+## Aula 5 - Páginas Dinâmicas, Animações e Lottie
+
+-  Listar endereços dos quizes da galera na página principal, a partir do arquivo db.json;
+-  Reaproveitar o componente de Widget;
+-  Acrescentar botões para os quizes da galera;
+-  Criar rotas com parâmetros dinâmicos com Next.js;
+-  Usar métodos de otimização por SSR para criar páginas dinâmicas;
+-  Trabalhar com promessas utilizando a Fetch API e Promises;
+-  Organizar o projeto com a pasta screens para definir leiautes de páginas;
+-  Passar para a página de quiz as props dos quizes externos;
+-  Usar o componente <p>Link</p> do Next.js para fazer a navegação no formato SPA;
+-  Usar o Framer Motion para criar animações de entrada para os widgets;

@@ -65,7 +65,9 @@
     }
   ],
   "external": [
-    ""
+    "https://1sec-quiz.victoroda.vercel.app/",
+    "https://crashquiz.wellingtonfreitas.vercel.app/",
+    "https://pato-quiz-nextjs.theedouglasam.vercel.app/"
   ],
   "theme": {
     "colors": {
